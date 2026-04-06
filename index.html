@@ -6,6 +6,7 @@
     <title>Inicial</title>
 
     <link rel="stylesheet" href="./libs/bootstrap-5.3.8/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -29,7 +30,7 @@
 
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row py-1">
                 <div class="col-10 offset-1 text-center">
                     <h1 id="text-growcasts">Growcasts, webinars e muito mais. Sem limites.</h1>
                     <p class="fs-3 mt-3">Assista onde quiser</p>
@@ -41,15 +42,13 @@
 
 
 
-
-
-        <div class="container-fluid text-light">
-            <div class="row bg-black py-4">
-                <div class="col-10 offset-1 custom-col-1">
-                    <h1 id="text-tv">Aproveite na TV.</h1>
-                    <p class="fs-3">Assista em Smart TVs, PlayStation, Xbox, Chormecast e outros dispositivos.</p>
+        <div class="container-fluid text-light border-bottom border-3 border-secondary">
+            <div class="row bg-dark justify-content-center align-items-center custom-row-1">
+                <div class="col-4">
+                    <h1 class="title">Aproveite na TV.</h1>
+                    <p class="fs-3 pe-6">Assista em Smart TVs, PlayStation, Xbox, Chormecast e outros dispositivos.</p>
                 </div>
-                <div class="col-10 offset-1 custom-col-2">
+                <div class="col-4 offset-2">
                     <img src="./images/tela-tv-dia-dev.png" alt="Frase como é seu dia? e um homem sorrindo" class="img-1">
                 </div>
             </div>
@@ -58,13 +57,193 @@
 
 
 
+        <div class="container-fluid text-light border-bottom border-3 border-secondary">
+            <div class="row bg-dark justify-content-center align-items-center custom-row-2">
+                <div class="col-4">
+                    <img src="./images/devices.png" alt="Frase como é seu dia? e um homem sorrindo" class="img-1">
+                </div>
+                <div class="col-4 offset-1">
+                    <h1 class="title">Assista quando quiser.</h1>
+                    <p class="fs-3">Assista no celular, tablet, Smart TV ou notebook sem pagar a mais por isso.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid text-light">
+            <div class="row bg-dark ">
+                <div class="col-12 pt-5">
+                    <h1 class="text-center title">Perguntas frequentes</h1>
+                </div>
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fs-3 d-flex justify-content-between align-items-center" 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseOne" 
+                                    aria-expanded="false" 
+                                    aria-controls="collapseOne">
+                                O que é Growflix?
+                                <i class="bi bi-plus icon"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas adipisci repellat ipsam, alias,
+                                    eum hic exercitationem aliquid, accusantium blanditiis dicta officia magni? Ab, corporis minima nam voluptatibus quas adipisci nulla.
+                                </p>                           
+                             </div>
+                          </div>
+                        </div>
+                       
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button collapsed fs-3 d-flex justify-content-between align-items-center" 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseTwo" 
+                                    aria-expanded="false" 
+                                    aria-controls="collapseTwo">
+                              Quanto custa a Growflix?
+                              <i class="bi bi-plus icon"></i>
+                            </button>
+                          </h2>
+                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas adipisci repellat ipsam, alias,
+                                    eum hic exercitationem aliquid, accusantium blanditiis dicta officia magni? Ab, corporis minima nam voluptatibus quas adipisci nulla.
+                                </p>                            </div>
+                            </div>
+                        </div>
+                       
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-3 d-flex justify-content-between align-items-center" 
+                                        type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseThree" 
+                                        aria-expanded="false" a
+                                        ria-controls="collapseThree">
+                                Onde posso assistir?
+                                <i class="bi bi-plus icon"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas adipisci repellat ipsam, alias,
+                                    eum hic exercitationem aliquid, accusantium blanditiis dicta officia magni? Ab, corporis minima nam voluptatibus quas adipisci nulla.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-3 d-flex justify-content-between align-items-center" 
+                                        type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseFour" 
+                                        aria-expanded="false" 
+                                        aria-controls="collapseThree">
+                                    Oque eu posso assistir na Growflix?
+                                    <i class="bi bi-plus icon"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas adipisci repellat ipsam, alias,
+                                    eum hic exercitationem aliquid, accusantium blanditiis dicta officia magni? Ab, corporis minima nam voluptatibus quas adipisci nulla.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fs-3 d-flex justify-content-between align-items-center" 
+                                        type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#collapseFive" 
+                                        aria-expanded="false" 
+                                        aria-controls="collapseThree">
+                                    A Growflix é adequada para crianças?
+                                    <i class="bi bi-plus icon"></i>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas adipisci repellat ipsam, alias,
+                                    eum hic exercitationem aliquid, accusantium blanditiis dicta officia magni? Ab, corporis minima nam voluptatibus quas adipisci nulla.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                      
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid bg-dark text-light border-bottom border-3 border-secondary">
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <p class="fs-5 mt-4">Pronto para assistir?</p>
+                    <button type="button" class="btn btn-danger btn-custon">Vamos la!</button>
+                </div>
+            </div>
+        </div>
 
     </main>
 
     <footer>
 
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <p class="fs-6">Dúvidas? Ligue 0800 591 8942</p>
+                </div>
+
+                <div class="col-3">
+                    <P>Perguntas frequentes</P>
+                    <P>Relação com investidores</P>
+                    <P>Formas de assistir</P>
+                    <P>Informações corporativas</P>
+                    <P>Só na Growflix</P>
+                </div>
+
+                <div class="col-3">
+                    <p>Central de ajuda</p>
+                    <p>Carreiras</p>
+                    <p>Termos de uso</p>
+                    <p>Entre em contato</p>
+                </div>
+                
+                <div class="col-3">
+                    <p>Contas</p>
+                    <p>Resgatar cartão pré-pago</p>
+                    <p>Privacidade</p>
+                    <p>Teste de velocidade</p>
+                </div>
+
+                <div class="col-3">
+                    <p>Media center</p>
+                    <p>Comprar cartão pré-pago</p>
+                    <p>Preferências de cookies</p>
+                    <p>Avisos legais</p>
+                </div>
+                
+                <div class="col-12">
+                    <p class="fs-6">Growflix Growdev</p>
+                </div>
+            </div>
+        </div>
 
     </footer>
+
+
 
     <script src="./libs/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
