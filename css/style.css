@@ -80,7 +80,10 @@ body {
   }
 
   footer {
-    width: 1400px;
     background-color: black;
-    
+  }
+
+  .custom-footer {
+    max-width: 1300px;
+    margin: auto;
   }
