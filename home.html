@@ -5,13 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="./libs/bootstrap-5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.8/css/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    
 
-    <link rel="stylesheet" href="./libs/bootstrap-5.3.8/js/bootstrap.min.js">
-    <link rel="stylesheet" href="./js/script.js">
+<body class="home-body">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo-growflix.svg" alt="Logo Growflix" class="logo-growflix">
+                  </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#">Growcast [episódios]</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#">Webinar em Flutter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#">Jornada UX/UI</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="#">Diversos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+      </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 fw-bolder text-light custom-container-home">
+                    <p class="m-0">PODCAST</p>
+                    <P class="custom-text-growcast m-0">GROWCAST</P>
+                    <button type="button" class="btn btn-light fw-semibold">
+                        <i class="bi bi-play-fill"></i> Assistir
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid bg-black text-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col fs-3 fw-bolder text-light bg-black">
+                        <p>Growcast[episódios]</p>
+                    </div>
+                </div>
+                <div class="row" id="growcast"></div>
+
+                <div class="row">
+                    <div class="col fs-3 fw-bolder text-light bg-black">
+                        <p>Webinar em Flutter</p>
+                    </div>
+                </div>
+                <div class="row"  id="flutter"></div>
+
+                <div class="row">
+                    <div class="col fs-3 fw-bolder text-light bg-black">
+                        <p>Jornada UX/UI</p>
+                    </div>
+                </div>
+                <div class="row" id="ux"></div>
+
+                <div class="row">
+                    <div class="col fs-3 fw-bolder text-light bg-black">
+                        <p>Diversos</p>
+                    </div>
+                </div>
+                <div class="row" id="several"></div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="container-fluid custom-footer">
+            <div class="row py-5 px-2">
+                <div class="col-12 p-2">
+                    <p class="fs-6">Dúvidas? Ligue 0800 591 8942</p>
+                </div>
+
+                <div class="col-5 py-4 col-sm-3">
+                    <P>Perguntas frequentes</P>
+                    <P>Relação com investidores</P>
+                    <P>Formas de assistir</P>
+                    <P>Informações corporativas</P>
+                    <P>Só na Growflix</P>
+                </div>
+
+                <div class="col-5 py-4 col-sm-3">
+                    <p>Central de ajuda</p>
+                    <p>Carreiras</p>
+                    <p>Termos de uso</p>
+                    <p>Entre em contato</p>
+                </div>
+                
+                <div class="col-5 py-4 col-sm-3">
+                    <p>Contas</p>
+                    <p>Resgatar cartão pré-pago</p>
+                    <p>Privacidade</p>
+                    <p>Teste de velocidade</p>
+                </div>
+
+                <div class="col-5 py-4 col-sm-3">
+                    <p>Media center</p>
+                    <p>Comprar cartão pré-pago</p>
+                    <p>Preferências de cookies</p>
+                    <p>Avisos legais</p>
+                </div>
+                
+                <div class="col-12">
+                    <p class="fs-6">Growflix Growdev</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="./assets/bootstrap-5.3.8/js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
