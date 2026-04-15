@@ -1,0 +1,48 @@
+.modal-dialog {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.modal-content {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.modal-header {
+    background: transparent;
+    padding: 40px 0px 35px 0px;
+}
+
+.modal-body {
+    background: black;
+}
+
+#videoFrame {
+    width: 100%;
+    height: 77vh;
+    display: block;
+}
+
+.modal-content .btn-close {
+    z-index: 1055;
+}
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 99999;
+}
+
+.close-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

@@ -1,0 +1,13 @@
+.title-section {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top:10px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.title-section:hover {
+    color: #FF8534;
+}

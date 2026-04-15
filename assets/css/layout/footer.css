@@ -1,0 +1,13 @@
+footer {
+    background-color: black;
+}
+
+footer p {
+    color: grey;
+    font-size: 13px;
+}
+
+.custom-footer {
+    max-width: 1300px;
+    margin: auto;
+}

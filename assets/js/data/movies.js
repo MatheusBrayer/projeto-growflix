@@ -1,4 +1,4 @@
-const movies = [{
+export const movies = [{
     img: "https://img.youtube.com/vi/aJ-HZuLcKeA/hqdefault.jpg",
     title: "Growcast #00 | Conheça a Growdev",
     link: "https://www.youtube.com/watch?v=aJ-HZuLcKeA",
@@ -73,21 +73,54 @@ const movies = [{
     title: "Webinar - Recriando o layout do WhatsApp com Flutter",
     link: "https://www.youtube.com/watch?v=L1pKoMC6hWk",
     category: "flutter"
+},{
+    img: "https://img.youtube.com/vi/FiZMowbaiJA/hqdefault.jpg",
+    title: "Live #5 Jornada UX/UI: O UX/UI Design é para todos?",
+    link: "https://www.youtube.com/watch?v=FiZMowbaiJA",
+    category: "ux"
+},{
+    img: "https://img.youtube.com/vi/cwqDu0ZzbYE/hqdefault.jpg",
+    title: "Live #4 Jornada UX/UI: Como migrar para o UX/UI Design: a trajetória de uma designer - Growdev",
+    link: "https://www.youtube.com/watch?v=cwqDu0ZzbYE",
+    category: "ux"
+},{
+    img: "https://img.youtube.com/vi/ZMZjQ9aRuIY/hqdefault.jpg",
+    title: "Live #3 Jornada UX/UI: As oportunidades de estudar um programa de formação pagando após formado",
+    link: "https://www.youtube.com/watch?v=ZMZjQ9aRuIY",
+    category: "ux"
+},{
+    img: "https://img.youtube.com/vi/8sd3wuKTZMA/hqdefault.jpg",
+    title: "Live #2 Jornada UX/UI: O profissional de UX/UI Design no mercado digital - Growdev",
+    link: "https://www.youtube.com/watch?v=8sd3wuKTZMA",
+    category: "ux"
+},{
+    img: "https://img.youtube.com/vi/-26aqPtgoEY/hqdefault.jpg",
+    title: "Live #1 Jornada UX/UI: O papel do UX/UI Designer no desenvolvimento de um produto digital - Growdev",
+    link: "https://www.youtube.com/watch?v=-26aqPtgoEY",
+    category: "ux"
+},{
+    img: "https://img.youtube.com/vi/QsuhYgsSYQo/hqdefault.jpg",
+    title: "Célula de talentos - Uma solução Growdev",
+    link: "https://www.youtube.com/watch?v=QsuhYgsSYQo",
+    category: "several"
+},{
+    img: "https://img.youtube.com/vi/ouDn8z3PSqs/hqdefault.jpg",
+    title: "Como é o dia a dia de um dev? Live Growdev com Marcelo Eltz",
+    link: "https://www.youtube.com/watch?v=ouDn8z3PSqs",
+    category: "several"
+},{
+    img: "https://img.youtube.com/vi/cQDQNX6NXYo/hqdefault.jpg",
+    title: "Onde trabalhar com qualidade de software? Conheça a Testing Company, empresa parceira da Growdev",
+    link: "https://www.youtube.com/watch?v=cQDQNX6NXYo",
+    category: "several"
+},{
+    img: "https://img.youtube.com/vi/nKGbolkirBM/hqdefault.jpg",
+    title: "WEBINAR ANALISTA DE DADOS - com Paulo Marcon da Arezzo&Co",
+    link: "https://www.youtube.com/watch?v=nKGbolkirBM",
+    category: "several"
+},{
+    img: "https://img.youtube.com/vi/6sZPsqNjeek/hqdefault.jpg",
+    title: "Tecnologia trazendo soluções para a Arezzo & CO | Ricardo Pinho",
+    link: "https://www.youtube.com/watch?v=6sZPsqNjeek",
+    category: "several"
 }]
-
-
-
-movies.forEach (movie => { 
-    const container = document.getElementById(movie.category);
-
-    const colum = document.createElement ('div')
-    colum.classList.add('col-12', 'col-md-4', 'col-xl-3')
-
-    const img = document.createElement('img');
-    img.src = movie.img
-    img.alt = movie.title
-    img.classList.add('img-fluid');
-
-    colum.appendChild(img)
-    container.appendChild(colum)
-});

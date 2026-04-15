@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo-growflix {
+    max-width: 130px;
+    height: auto;
+}
+
+.title {
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: bolder;
+}
+
+.custom-text {
+    font-size: clamp(25px, 4vw, 30px);
+    max-width: 300px;
+    margin: auto;
+}
+
+@media (min-width: 576px) {
+    .custom-text {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .custom-text {
+        margin: 0;
+    }
+}
+
+.img-1 {
+    width: clamp(200px, 40vw, 500px);
+    object-fit: cover;
+}
+
+.custom-row-1 {
+    padding: 50px 0px;
+}
+
+.custom-container {
+    max-width: 1600px;
+}
+
+.bi-caret-right-fill {
+    font-size: 15px;
+}

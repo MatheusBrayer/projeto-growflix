@@ -1,0 +1,21 @@
+.home-body {
+    background-image: url("../../images/growcast-01.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.custom-container-home {
+    margin-top: 400px;
+    margin-bottom: 100px;
+    max-width: 800px;
+}
+
+.custom-text-growcast {
+    font-size: clamp(50px,5vw, 80px);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+#custom-text-podcast {
+    font-size: 15px;
+}

@@ -1,0 +1,32 @@
+.accordion-item {
+    margin: 5px auto;
+    max-width: 850px;
+    width: 70%;
+    border-radius: 0px !important;
+    border: 1px solid #303030 !important;
+}
+
+.accordion-button {
+    background-color: #303030;
+    color: white;
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #303030;
+    color: white;
+}
+
+.accordion-button::after {
+    display: none;
+}
+
+.accordion-button .icon {
+    transition: transform 0.2s ease;
+    font-size: 40px;
+}
+
+.accordion-button:not(.collapsed) .icon {
+    transform: rotate(-180deg);
+}

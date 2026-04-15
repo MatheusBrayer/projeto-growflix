@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 
-    <link rel="stylesheet" href="./assets/bootstrap-5.3.8/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/bootstrap-5.3.8/css/bootstrap-icons-1.13.1/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.3.8/css/bootstrap-icons-1.13.1/bootstrap-icons.css">
+    <link rel="stylesheet" href="./libs/bootstrap-5.3.8/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="home-body">
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-dark navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./assets/images/logo-growflix.svg" alt="Logo Growflix" class="logo-growflix">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./images/logo-growflix.svg" alt="Logo Growflix" class="logo-growflix">
                   </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,19 +23,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-light" aria-current="page" href="#">Início</a>
+                            <a class="nav-link active text-light" aria-current="page" href="./index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50" href="#">Growcast [episódios]</a>
+                            <a class="nav-link" href="#section-growcast">Growcast[episódios]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50" href="#">Webinar em Flutter</a>
+                            <a class="nav-link" href="#section-flutter">Webinar em Flutter</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50" href="#">Jornada UX/UI</a>
+                            <a class="nav-link" href="#section-ux">Jornada UX/UI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white-50" href="#">Diversos</a>
+                            <a class="nav-link" href="#section-several">Diversos</a>
                         </li>
                     </ul>
                 </div>
@@ -45,44 +45,44 @@
 
     <main>
         <div class="container">
-            <div class="row">
+            <div class="row px-5 m-1">
                 <div class="col-12 fw-bolder text-light custom-container-home">
-                    <p class="m-0">PODCAST</p>
-                    <P class="custom-text-growcast m-0">GROWCAST</P>
-                    <button type="button" class="btn btn-light fw-semibold">
-                        <i class="bi bi-play-fill"></i> Assistir
+                    <p id="custom-text-podcast">PODCAST</p>
+                    <P class="custom-text-growcast">GROWCAST</P>
+                    <button type="button" class="btn btn-light fw-semibold" id="btnPlayVideoHome">
+                        <i class="bi bi-caret-right-fill"></i> Assistir
                     </button>
                 </div>
             </div>
         </div>
 
 
-        <div class="container-fluid bg-black text-light">
+        <div class="container-fluid bg-black text-light border-bottom border-3 border-secondary">
             <div class="container">
-                <div class="row">
-                    <div class="col fs-3 fw-bolder text-light bg-black">
-                        <p>Growcast[episódios]</p>
+                <div class="row" id="section-growcast">
+                    <div class="col-12">
+                        <a href="#" class="title-section"> Growcast [Episódios] <i class="bi bi-caret-right-fill"></i></a>
                     </div>
                 </div>
                 <div class="row" id="growcast"></div>
 
-                <div class="row">
-                    <div class="col fs-3 fw-bolder text-light bg-black">
-                        <p>Webinar em Flutter</p>
+                <div class="row" id="section-flutter">
+                    <div class="col-12 mt-5">
+                        <a href="#" class="title-section"> Webinar em Flutter <i class="bi bi-caret-right-fill"></i></a>
                     </div>
                 </div>
                 <div class="row"  id="flutter"></div>
 
-                <div class="row">
-                    <div class="col fs-3 fw-bolder text-light bg-black">
-                        <p>Jornada UX/UI</p>
+                <div class="row" id="section-ux">
+                    <div class="col-12 mt-5">
+                        <a href="#" class="title-section"> Jornada UX/UI <i class="bi bi-caret-right-fill"></i></a>
                     </div>
                 </div>
                 <div class="row" id="ux"></div>
 
-                <div class="row">
-                    <div class="col fs-3 fw-bolder text-light bg-black">
-                        <p>Diversos</p>
+                <div class="row" id="section-several">
+                    <div class="col-12 mt-5">
+                        <a href="#" class="title-section"> Diversos <i class="bi bi-caret-right-fill"></i></a>
                     </div>
                 </div>
                 <div class="row" id="several"></div>
@@ -137,7 +137,26 @@
 
     </footer>
 
-    <script src="./assets/bootstrap-5.3.8/js/bootstrap.bundle.js"></script>
-    <script src="./js/script.js"></script>
+    <div class="modal fade" id="videoModal" tabindex="-1" 
+     data-bs-backdrop="static" 
+     data-bs-keyboard="false">
+
+    <div class="modal-dialog w-100 m-0 m-0">
+        <div class="modal-content">
+
+            <div class="modal-header border-0 position-relative">
+                <i class="bi bi-x-lg close-icon" data-bs-dismiss="modal"></i>
+            </div>
+
+            <div class="modal-body p-0">
+                <iframe id="videoFrame" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="./libs/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
