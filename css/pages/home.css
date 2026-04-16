@@ -4,12 +4,30 @@
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
+    transition: height 0.3s ease;
 }
+
+.home-body.expanded {
+    height: 120vh;
+}
+
+/* @media (max-height: 700px) {
+    .home-body {
+        height: 120vh;
+    }
+} */
 
 .custom-container-home {
     margin-top: 400px;
     margin-bottom: 100px;
     max-width: 800px;
+}
+
+@media (max-height: 700px) {
+    .custom-container-home {
+        margin-top: 250px;
+        margin-bottom: 50px;
+    }
 }
 
 .custom-text-growcast {

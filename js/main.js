@@ -18,3 +18,9 @@ if (playVideoHome) {
         openVideo('https://www.youtube.com/watch?v=7OWT3lfHYvE');
     });
 }
+
+document.querySelector('.navbar-toggler')
+.addEventListener('click', () => {
+    document.querySelector('.home-body')
+        .classList.toggle('expanded');
+});
