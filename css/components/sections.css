@@ -11,3 +11,7 @@
 .title-section:hover {
     color: #FF8534;
 }
+
+.custom-section {
+    background: black;
+}
