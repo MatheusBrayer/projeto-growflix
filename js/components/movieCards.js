@@ -2,7 +2,7 @@ import { openVideo } from '../services/videoModal.js';
 
 export function createMovieCard(movie) {
     const colum = document.createElement('div');
-    colum.classList.add('col-12', 'col-md-4', 'col-xl-3', 'my-0', 'py-0');
+    colum.classList.add('col-12','col-sm-6', 'col-md-4', 'col-xl-3', 'my-0', 'py-3','py-lg-0');
 
     const card = document.createElement('div');
     card.classList.add('movie-card');
