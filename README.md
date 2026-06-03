@@ -14,7 +14,7 @@ Projeto inspirado na Netflix para exibição de conteúdos da Growdev.
 - Layout responsivo
 
 ## 🔗 Deploy
-(link aqui)
+[(link aqui)](https://matheusbrayer.github.io/projeto-growflix/)
 
 ## 📸 Preview
 <img width="1773" height="926" alt="image" src="https://github.com/user-attachments/assets/b772a7cd-8226-409f-9d3e-8f09bfbd743d" />
